@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name PowerSwitchClientBoard)(type KiCad)(uri ${KIPRJMOD}/PowerSwitchClientBoard.pretty)(options "")(descr ""))
+)

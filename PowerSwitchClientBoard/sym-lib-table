@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name PowerSwitchClientBoardLibrary)(type Legacy)(uri ${KIPRJMOD}/PowerSwitchClientBoardLibrary.lib)(options "")(descr ""))
+)
