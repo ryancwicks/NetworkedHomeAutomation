@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PowerSwitchClientBoard-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -19,7 +20,7 @@ U 1 1 5D437084
 P 6300 4350
 F 0 "U1" H 6275 5265 50  0000 C CNN
 F 1 "ESP32-DOIT" H 6275 5174 50  0000 C CNN
-F 2 "" H 6300 4350 50  0001 C CNN
+F 2 "PowerSwitchClientBoard:ESP32-DOIT" H 6300 4350 50  0001 C CNN
 F 3 "" H 6300 4350 50  0001 C CNN
 F 4 "ESP32-DOIT" H 6300 4350 50  0001 C CNN "PartNumber"
 	1    6300 4350
@@ -31,7 +32,7 @@ U 1 1 5D437819
 P 1350 1600
 F 0 "J2" H 1268 1817 50  0000 C CNN
 F 1 "Conn_01x02" H 1268 1726 50  0000 C CNN
-F 2 "" H 1350 1600 50  0001 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 1350 1600 50  0001 C CNN
 F 3 "~" H 1350 1600 50  0001 C CNN
 	1    1350 1600
 	-1   0    0    -1  
@@ -42,7 +43,7 @@ U 1 1 5D437EC0
 P 1350 2700
 F 0 "J3" H 1268 2917 50  0000 C CNN
 F 1 "Conn_01x02" H 1268 2826 50  0000 C CNN
-F 2 "" H 1350 2700 50  0001 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 1350 2700 50  0001 C CNN
 F 3 "~" H 1350 2700 50  0001 C CNN
 	1    1350 2700
 	-1   0    0    -1  
@@ -53,7 +54,7 @@ U 1 1 5D43822B
 P 1300 4900
 F 0 "J1" H 1218 5117 50  0000 C CNN
 F 1 "Conn_01x02" H 1218 5026 50  0000 C CNN
-F 2 "" H 1300 4900 50  0001 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 1300 4900 50  0001 C CNN
 F 3 "~" H 1300 4900 50  0001 C CNN
 	1    1300 4900
 	-1   0    0    -1  
@@ -64,7 +65,7 @@ U 1 1 5D438551
 P 8600 2650
 F 0 "J6" H 8680 2642 50  0000 L CNN
 F 1 "Conn_01x02" H 8680 2551 50  0000 L CNN
-F 2 "" H 8600 2650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8600 2650 50  0001 C CNN
 F 3 "~" H 8600 2650 50  0001 C CNN
 	1    8600 2650
 	1    0    0    -1  
@@ -75,7 +76,7 @@ U 1 1 5D438A9E
 P 8600 3400
 F 0 "J7" H 8680 3392 50  0000 L CNN
 F 1 "Conn_01x02" H 8680 3301 50  0000 L CNN
-F 2 "" H 8600 3400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8600 3400 50  0001 C CNN
 F 3 "~" H 8600 3400 50  0001 C CNN
 	1    8600 3400
 	1    0    0    -1  
@@ -86,7 +87,7 @@ U 1 1 5D438DEE
 P 8550 4250
 F 0 "J4" H 8630 4242 50  0000 L CNN
 F 1 "Conn_01x02" H 8630 4151 50  0000 L CNN
-F 2 "" H 8550 4250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8550 4250 50  0001 C CNN
 F 3 "~" H 8550 4250 50  0001 C CNN
 	1    8550 4250
 	1    0    0    -1  
@@ -97,7 +98,7 @@ U 1 1 5D439518
 P 8550 5100
 F 0 "J5" H 8630 5092 50  0000 L CNN
 F 1 "Conn_01x02" H 8630 5001 50  0000 L CNN
-F 2 "" H 8550 5100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8550 5100 50  0001 C CNN
 F 3 "~" H 8550 5100 50  0001 C CNN
 	1    8550 5100
 	1    0    0    -1  
@@ -235,7 +236,7 @@ Neutral
 Text GLabel 1600 5000 2    50   Input ~ 0
 Neutral
 Wire Wire Line
-	2950 1800 3050 1800
+	2950 1800 3000 1800
 Wire Wire Line
 	1650 1700 1550 1700
 Wire Wire Line
@@ -512,30 +513,6 @@ Wire Wire Line
 Wire Wire Line
 	2850 5000 3000 5000
 $Comp
-L PowerSwitchClientBoardLibrary:LED D3
-U 1 1 5D4ECCB4
-P 9250 2700
-F 0 "D3" V 9289 2583 50  0000 R CNN
-F 1 "LED" V 9198 2583 50  0000 R CNN
-F 2 "" H 9250 2700 50  0001 C CNN
-F 3 "https://www.lumex.com/content/files/ProductAttachment/SSI-LXH600GD-150.pdf" H 9250 2700 50  0001 C CNN
-F 4 "SSI-LXH600GD-150 " H 9250 2700 50  0001 C CNN "PartNumber"
-	1    9250 2700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L PowerSwitchClientBoardLibrary:LED D4
-U 1 1 5D4EF2EF
-P 9250 3450
-F 0 "D4" V 9289 3333 50  0000 R CNN
-F 1 "LED" V 9198 3333 50  0000 R CNN
-F 2 "" H 9250 3450 50  0001 C CNN
-F 3 "https://www.lumex.com/content/files/ProductAttachment/SSI-LXH600GD-150.pdf" H 9250 3450 50  0001 C CNN
-F 4 "SSI-LXH600GD-150 " H 9250 3450 50  0001 C CNN "PartNumber"
-	1    9250 3450
-	0    -1   -1   0   
-$EndComp
-$Comp
 L PowerSwitchClientBoardLibrary:SW_Push SW1
 U 1 1 5D4F9030
 P 8100 4650
@@ -559,10 +536,6 @@ F 4 "1825027-8 " H 8100 5500 50  0001 C CNN "PartNumber"
 	1    8100 5500
 	-1   0    0    1   
 $EndComp
-NoConn ~ 9250 2550
-NoConn ~ 9250 2850
-NoConn ~ 9250 3300
-NoConn ~ 9250 3600
 $Comp
 L PowerSwitchClientBoardLibrary:R R4
 U 1 1 5D504014
@@ -640,5 +613,39 @@ Wire Wire Line
 	2550 1500 2550 1600
 Connection ~ 2550 1600
 Wire Wire Line
-	2550 1600 3050 1600
+	2550 1600 2800 1600
+NoConn ~ 2300 2900
+NoConn ~ 2250 5100
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D4C5C72
+P 2800 1450
+F 0 "#FLG0101" H 2800 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 2800 1623 50  0000 C CNN
+F 2 "" H 2800 1450 50  0001 C CNN
+F 3 "~" H 2800 1450 50  0001 C CNN
+	1    2800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5D4C5F35
+P 3000 2000
+F 0 "#FLG0102" H 3000 2075 50  0001 C CNN
+F 1 "PWR_FLAG" H 3000 2173 50  0000 C CNN
+F 2 "" H 3000 2000 50  0001 C CNN
+F 3 "~" H 3000 2000 50  0001 C CNN
+	1    3000 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2800 1450 2800 1600
+Connection ~ 2800 1600
+Wire Wire Line
+	2800 1600 3050 1600
+Wire Wire Line
+	3000 2000 3000 1800
+Connection ~ 3000 1800
+Wire Wire Line
+	3000 1800 3050 1800
 $EndSCHEMATC

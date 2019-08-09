@@ -1,4 +1,4 @@
-16287093475382963
+16288658703939963
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -63819,12 +63819,19 @@ Potentiometer vertical Vishay T73YP
 3
 3
 PowerSwitchClientBoard
+ESP32-DOIT
+
+
+0
+0
+0
+PowerSwitchClientBoard
 PSK-S10C
 
 
 0
-0
-0
+4
+4
 RF
 Skyworks_SKY65404-31
 http://www.skyworksinc.com/uploads/documents/SKY65404_31_201512K.pdf
