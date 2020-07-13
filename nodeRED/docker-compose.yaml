@@ -1,0 +1,23 @@
+version: "3"
+services:
+  broker:
+    image: eclipse-mosquitto
+    volumes:
+      - "./mosquitto:/mosquitto"
+    networks:
+      - localnet
+    ports:
+      - "1883:1883"
+  node-red:
+    depends_on:
+      - broker
+    image: home_node_server
+    volumes:
+      - "./node-red:/data"
+    user: "0"
+    networks:
+      - localnet
+    ports:
+      - "1880:1880"
+networks:
+  localnet:

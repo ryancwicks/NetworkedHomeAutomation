@@ -513,30 +513,6 @@ Wire Wire Line
 Wire Wire Line
 	2850 5000 3000 5000
 $Comp
-L PowerSwitchClientBoardLibrary:LED D3
-U 1 1 5D4ECCB4
-P 9250 2700
-F 0 "D3" V 9289 2583 50  0000 R CNN
-F 1 "LED" V 9198 2583 50  0000 R CNN
-F 2 "" H 9250 2700 50  0001 C CNN
-F 3 "https://www.lumex.com/content/files/ProductAttachment/SSI-LXH600GD-150.pdf" H 9250 2700 50  0001 C CNN
-F 4 "SSI-LXH600GD-150 " H 9250 2700 50  0001 C CNN "PartNumber"
-	1    9250 2700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L PowerSwitchClientBoardLibrary:LED D4
-U 1 1 5D4EF2EF
-P 9250 3450
-F 0 "D4" V 9289 3333 50  0000 R CNN
-F 1 "LED" V 9198 3333 50  0000 R CNN
-F 2 "" H 9250 3450 50  0001 C CNN
-F 3 "https://www.lumex.com/content/files/ProductAttachment/SSI-LXH600GD-150.pdf" H 9250 3450 50  0001 C CNN
-F 4 "SSI-LXH600GD-150 " H 9250 3450 50  0001 C CNN "PartNumber"
-	1    9250 3450
-	0    -1   -1   0   
-$EndComp
-$Comp
 L PowerSwitchClientBoardLibrary:SW_Push SW1
 U 1 1 5D4F9030
 P 8100 4650
@@ -560,10 +536,6 @@ F 4 "1825027-8 " H 8100 5500 50  0001 C CNN "PartNumber"
 	1    8100 5500
 	-1   0    0    1   
 $EndComp
-NoConn ~ 9250 2550
-NoConn ~ 9250 2850
-NoConn ~ 9250 3300
-NoConn ~ 9250 3600
 $Comp
 L PowerSwitchClientBoardLibrary:R R4
 U 1 1 5D504014
@@ -676,4 +648,8 @@ Wire Wire Line
 Connection ~ 3000 1800
 Wire Wire Line
 	3000 1800 3050 1800
+Text Notes 3450 1050 0    50   ~ 0
+Need to replace PS with https://www.digikey.ca/product-detail/en/cui-inc/PBO-3-S9/102-4066-ND/6362755
+Text Notes 4550 1600 0    50   ~ 0
+Also switch relays to thyristors
 $EndSCHEMATC

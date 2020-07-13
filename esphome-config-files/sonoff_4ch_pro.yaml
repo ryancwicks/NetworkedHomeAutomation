@@ -1,0 +1,69 @@
+esphome:
+  name: four_channel_switch
+  platform: ESP8266
+  board: esp01_1m
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+api:
+
+logger:
+
+ota:
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO0
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "Sonoff 4CH Button 1"
+  - platform: gpio
+    pin:
+      number: GPIO9
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "Sonoff 4CH Button 2"
+  - platform: gpio
+    pin:
+      number: GPIO10
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "Sonoff 4CH Button 3"
+  - platform: gpio
+    pin:
+      number: GPIO14
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "Sonoff 4CH Button 4"
+  - platform: status
+    name: "Sonoff 4CH Status"
+
+switch:
+  - platform: gpio
+    name: "Sonoff 4CH Relay 1"
+    pin: GPIO12
+  - platform: gpio
+    name: "Sonoff 4CH Relay 2"
+    pin: GPIO5
+  - platform: gpio
+    name: "Sonoff 4CH Relay 3"
+    pin: GPIO4
+  - platform: gpio
+    name: "Sonoff 4CH Relay 4"
+    pin: GPIO15
+
+output:
+  # Register the blue LED as a dimmable output ....
+  - platform: esp8266_pwm
+    id: blue_led
+    pin: GPIO13
+    inverted: True
+
+light:
+  # ... and then make a light out of it.
+  - platform: monochromatic
+    name: "Sonoff 4CH Blue LED"
+    output: blue_led

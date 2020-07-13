@@ -1,2 +1,6 @@
 PowerSwitchClient/credentials.h
-
+secrets.yaml
+*.backup
+venv/
+.npm/
+.*
