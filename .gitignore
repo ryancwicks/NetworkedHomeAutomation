@@ -4,3 +4,6 @@ secrets.yaml
 venv/
 .npm/
 .*
+
+CustomBoard/PowerSwitchClient/credentials.h
+

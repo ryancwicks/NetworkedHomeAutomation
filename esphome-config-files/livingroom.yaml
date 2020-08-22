@@ -1,23 +1,38 @@
 esphome:
-  name: livingroom
+  name: living_room
   platform: ESP32
   board: esp32doit-devkit-v1
-
-switch:
-  - platform: gpio
-    name: "Living Room Lights"
-    pin: 19
 
 wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
 
-# Enable logging
+#api:
+
 logger:
 
-# Enable Home Assistant API
-api:
-  password: !secret api_password
-
-ota:
+ota: #Have to manually flash a new one.
   password: !secret ota_password
+
+web_server: 
+  port: 80
+
+mqtt:
+  broker: !secret mqtt_broker
+  #username: !secret mqtt_username
+  #password: !secret mqtt_password
+  port: !secret mqtt_port
+  # Set to true when finished testing to set MQTT retain flag
+  discovery_retain: false
+  birth_message:
+    topic: living_room/status
+    payload: online
+  will_message:
+    topic: living_room/status
+    payload: offline
+
+switch:
+  - platform: gpio
+    name: "Living Room Lights"
+    pin: 19
+    id: relay
